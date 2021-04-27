@@ -17,7 +17,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(b.getRoot());
         eventHandler();
     }
-    
+
     private void eventHandler() {
         b.button2.setOnClickListener(v -> countUp());
 
