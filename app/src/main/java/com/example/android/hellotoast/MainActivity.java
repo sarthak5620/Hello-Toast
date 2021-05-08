@@ -3,6 +3,7 @@ package com.example.android.hellotoast;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Toast;
 
 import com.example.android.hellotoast.databinding.ActivityMainBinding;
@@ -34,5 +35,15 @@ public class MainActivity extends AppCompatActivity {
     //To count increase
     private void countUp() {
         b.textView.setText("" + qty++);
+    }
+
+    public void countUp(View view) {
+        b.textView.setText("" + qty++);
+    }
+
+    public void showToast(View view) {
+        Toast toast = Toast.makeText(this, R.string.toast_message,
+                Toast.LENGTH_SHORT);
+        toast.show();
     }
 }

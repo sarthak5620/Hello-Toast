@@ -31,6 +31,7 @@
         android:layout_height="wrap_content"
         android:text="@string/toast"
         android:textSize="60sp"
+        android:onClick="showToast"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -40,6 +41,7 @@
         android:layout_height="wrap_content"
         android:text="@string/count"
         android:textSize="60sp"
+        android:onClick="countUp"
         app:layout_constraintBaseline_toBaselineOf="@+id/button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/button" />
